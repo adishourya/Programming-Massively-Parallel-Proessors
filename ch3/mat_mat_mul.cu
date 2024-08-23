@@ -43,6 +43,7 @@ int main() {
 
   cudaMemcpy(mat1_d, mat1_h, sizeof(mat1_h), cudaMemcpyHostToDevice);
   cudaMemcpy(mat2_d, mat2_h, sizeof(mat2_h), cudaMemcpyHostToDevice);
+
   // init the ans var to 0
   cudaMemset(ans_d, 0, sizeof(mat1_h));
 

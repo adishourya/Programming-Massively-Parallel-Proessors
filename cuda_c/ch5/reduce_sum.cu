@@ -100,7 +100,7 @@ __global__ void sumReduceKernlShared(int *out_arr, int *arr) {
     __syncthreads();
   }
 
-  // now finally write back to the dram
+  // now finally write back to the hbm
   if (loc_threadid == 0) {
     out_arr[blockIdx.x] = portion[0];
   }

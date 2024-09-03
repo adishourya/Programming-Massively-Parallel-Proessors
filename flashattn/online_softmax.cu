@@ -4,9 +4,7 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
 
-// read tiled matmul before this!
-// part of the motivation for flash attention was online softmax
-// we will try to parallelize softmax in this file
+// we will try to fuse some of the operations of softmax in this file
 
 // SOFTMAX has always been a 💢
 
